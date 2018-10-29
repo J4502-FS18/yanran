@@ -30,16 +30,21 @@ article:last-of-type {
   border-bottom: none;
 }
 
-@media screen and (min-width: 450px) {
+/*@media screen and (min-width: 450px) {
 
     nav ul {
         flex-flow: row;
         justify-content: space-between;
     }
 
-}
+}*/
 
 @media screen and (min-width: 600px) {
+
+  nav ul {
+      flex-flow: row;
+      justify-content: space-between;
+  }
 
     #container {
         width: 80%;
@@ -60,9 +65,7 @@ article:last-of-type {
 }
 
 @media screen and (min-width: 800px) {
-    .item1 {
-      margin-right: 850px;
-    }
+
 
     nav ul li {
       margin: 5px;
@@ -75,6 +78,11 @@ article:last-of-type {
 }
 
 @media screen and (min-width:1000px) {
+
+  .item1 {
+    margin-right: 850px;
+  }
+  
   article {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
