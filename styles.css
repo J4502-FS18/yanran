@@ -82,7 +82,7 @@ article:last-of-type {
   .item1 {
     margin-right: 850px;
   }
-  
+
   article {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
@@ -249,4 +249,44 @@ a {
 
 a:hover {
     color: #bd5532;
+}
+
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+    text-decoration:none;
+}
+
+header h1 {
+    order: 2;
+    font-size: 2em;
+}
+
+nav ul {
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
 }
